@@ -1,0 +1,154 @@
+/* css/style.css - Estilos modernos para o Portfólio de Henrique Design */
+
+/* Estilo para todas as imagens dentro da área de conteúdo principal */
+/* Isso garante que as miniaturas sejam pequenas na página */
+.portfolio-content img {
+    width: 110px;  /* Largura fixa para a miniatura */
+    height: 80px; /* Altura fixa para a miniatura */
+    object-fit: cover; /* Garante que a imagem preencha a área sem distorcer */
+    border: 1px solid #CCCCCC; /* Borda cinza clara para as miniaturas */
+    display: block; /* Garante que as imagens se comportem como blocos */
+    margin: 5px auto; /* Centraliza a imagem se ela estiver sozinha em um parágrafo */
+}
+
+/* Estilo específico para a imagem do logotipo dentro do portfólio */
+.portfolio-logo-thumb {
+    width: 110px;  /* Tamanho da miniatura do logo */
+    height: 80px; /* Altura da miniatura do logo */
+    border: 1px solid #006699; /* Borda azul mais destacada para o logo */
+    object-fit: contain; /* Garante que o logo seja visível, se não se encaixar no "cover" */
+}
+
+/* Estilo para a imagem de "Em Construção" (se utilizada) */
+.under-construction-gif {
+    width: 80px;  /* Largura da imagem de "em construção" */
+    height: 60px; /* Altura da imagem de "em construção" */
+    border: none; /* Gifs animados geralmente não tinham borda */
+}
+
+/* Estilos adicionais para melhor legibilidade (opcional, mas bom para o site moderno) */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão mais moderna */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    color: #333333;
+}
+
+h1, h2, h3, h4 {
+    color: #006699;
+    font-family: "Lucida Console", "Courier New", monospace; /* Fonte mais clássica de terminal/web antiga */
+}
+
+a {
+    color: #0000FF;
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #FF0000; /* Cor vermelha ao passar o mouse */
+}
+
+/* Melhorias para a tabela de layout principal (opcional) */
+table {
+    border-collapse: collapse; /* Remove espaçamento extra entre células */
+}
+
+td {
+    vertical-align: top;
+}
+/* css/style.css - Estilos modernos para o Portfólio de Henrique Design */
+
+/* Estilo para todas as imagens dentro da área de conteúdo principal */
+.portfolio-content img {
+    width: 110px;  /* Largura fixa para a miniatura */
+    height: 80px;  /* Altura fixa para a miniatura */
+    object-fit: cover; /* Garante que a imagem preencha a área sem distorcer */
+    border: 1px solid #CCCCCC; /* Borda cinza clara para as miniaturas */
+    display: block; /* Garante que as imagens se comportem como blocos */
+    margin: 5px auto; /* Centraliza a imagem se ela estiver sozinha em um parágrafo */
+    max-width: 100%;  /* Tornar responsivo */
+    height: auto;     /* Ajusta altura proporcional */
+}
+
+/* Estilo específico para a imagem do logotipo dentro do portfólio */
+.portfolio-logo-thumb {
+    width: 110px;  /* Tamanho da miniatura do logo */
+    height: 80px;  /* Altura da miniatura do logo */
+    border: 1px solid #006699; /* Borda azul mais destacada para o logo */
+    object-fit: contain; /* Garante que o logo seja visível */
+    max-width: 100%;  /* Responsivo */
+    height: auto;
+}
+
+/* Estilo para a imagem de "Em Construção" (se utilizada) */
+.under-construction-gif {
+    width: 80px;  /* Largura da imagem de "em construção" */
+    height: 60px; /* Altura da imagem de "em construção" */
+    border: none; /* Gifs animados geralmente não tinham borda */
+    max-width: 100%;  /* Responsivo */
+    height: auto;
+}
+
+/* Melhorias para a tabela de layout principal */
+table {
+    border-collapse: collapse; /* Remove espaçamento extra entre células */
+    width: 750px; /* Mantém largura fixa para telas grandes */
+    margin: 0 auto; /* Centraliza tabela */
+}
+
+/* Para telas pequenas, deixa a tabela fluida e os TD's empilhados */
+@media (max-width: 800px) {
+    table {
+        width: 100% !important;
+        display: block;
+    }
+    tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+    td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 10px 0 !important;
+    }
+}
+
+/* Textos */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão mais moderna */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    color: #333333;
+    padding: 10px;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    color: #006699;
+    font-family: "Lucida Console", "Courier New", monospace;
+    word-wrap: break-word;
+}
+
+/* Links */
+a {
+    color: #0000FF;
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    word-break: break-word;
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #FF0000;
+}
+
+/* Ajuste para o menu lateral (ul) na coluna */
+ul {
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* Pequeninos ajustes gerais */
+p {
+    margin-bottom: 1em;
+    word-wrap: break-word;
+}
